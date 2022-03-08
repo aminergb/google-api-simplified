@@ -1,0 +1,44 @@
+{
+  "name": "auth-simplified",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@testing-library/user-event": "^12.1.10",
+    "@types/node": "^12.0.0",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "rss-parser": "^3.12.0",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "axios": "^0.26.0",
+    "concurrently": "^6.4.0",
+    "express": "^4.17.3",
+    "googleapis": "^95.0.0",
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "start": "node ./server/main.js",
+    "dev": "nodemon ./server/main.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .ts,.tsx --fix src/",
+    "prettify": "prettier --write src/",
+    "fmt-lint": "yarn run prettify && yarn run lint"
+  },
+  "eslintConfig": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
