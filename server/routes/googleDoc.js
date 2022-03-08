@@ -15,7 +15,7 @@ const formatDoc = (content) => {
     return formatedDoc;
 }
 const isNotEmpty = (element) => {
-    console.log(element)
+
     if (element.length <= 0 || element === null || element === undefined)
         return false
     return true
